@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  --bg-color: #f5f5f5;
+  --light-purple: #d8ccfd;
+  --blue-purple: #8cbffc;
+  --dark-blue-purple: rgb(56, 92, 154);
+  --blue-purple-half-opaque: rgba(140, 191, 252, 0.5);
+  --blue-purple-quart-opaque: rgba(140, 191, 252, 0.25);
+  --blue-purple-8percent-opaque: rgba(140, 191, 252, 0.08);
+  --bright-light-blue: #5cfaf6;
+  --bright-green: #a5ff92;
+  --light-grey: rgb(228, 228, 228);
+  --mid-grey: rgb(195, 195, 195);
+  --dark-grey: rgb(125, 125, 125);
+  --text-color: #333;
+  --faint-text-color: rgba(51, 51, 51, 0.5);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+button:hover {
+  background-color: var(--dark-grey);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 36;
+  font-size: 30px;
+}
