@@ -2,16 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./RouterEndPoints/HomePage/App";
+import { RecipePage } from "./RouterEndPoints/RecipePage/RecipePage";
 import reportWebVitals from "./reportWebVitals";
 import "./AutoCompleteCSS/theme.css"; // theme
 import "primereact/resources/primereact.css"; // core css
 import "primeicons/primeicons.css"; // icons
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ErrorPage } from "./RouterEndPoints/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "recipe/:name/:id",
+    element: <RecipePage />,
+    errorElement: <ErrorPage />,
   },
 ]);
 

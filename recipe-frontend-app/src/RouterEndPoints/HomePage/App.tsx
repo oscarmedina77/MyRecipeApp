@@ -1,7 +1,7 @@
 import "./App.css";
-import { Header } from "../../Header/Header";
-import { Recipes } from "../../Recipes/Recipes";
-import { Search } from "../../Search/Search";
+import { Header } from "../../Elements/Header/Header";
+import { Recipes } from "../../Elements/RecipesList/Recipes";
+import { Search } from "../../Elements/Search/Search";
 
 function App() {
   return (

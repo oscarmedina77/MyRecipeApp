@@ -24,6 +24,7 @@
   --dark-grey: rgb(125, 125, 125);
   --text-color: #333;
   --faint-text-color: rgba(51, 51, 51, 0.5);
+  --faint-light-grey: rgba(228, 228, 228, 0.4);
 }
 
 body {
@@ -41,6 +42,11 @@ button {
 }
 button:hover {
   background-color: var(--mid-grey);
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 .material-symbols-outlined {

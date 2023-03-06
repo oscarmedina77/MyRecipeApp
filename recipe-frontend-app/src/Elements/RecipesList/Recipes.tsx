@@ -1,5 +1,5 @@
 import s from "./Recipes.styles";
-import data from "../SampleData/sampleRecipe";
+import data from "../../SampleData/sampleRecipe";
 import { RecipeCard } from "./RecipeCard/RecipeCard";
 
 export const Recipes = () => {
