@@ -6,7 +6,25 @@ import {
 import React, { useState } from "react";
 
 export const Search = () => {
-  const ingredients = ["Butter", "Sugar", "Lemon", "Bread"];
+  const ingredients = [
+    "Butter",
+    "Sugar",
+    "Lemon",
+    "Bread",
+    "Milk",
+    "Tea",
+    "Bread Flour",
+    "Self-raising Flour",
+    "Plain Flour",
+    "Broccoli",
+    "Tomato",
+    "Cheddar Cheese",
+    "Beef",
+    "Lamb",
+    "Pork",
+    "Onion",
+    "Garlic",
+  ];
   const [selectedIngredients, setSelectedIngredients] = useState<String[]>([]);
   const [ingredientSuggestions, setIngredientSuggestions] = useState<String[]>(
     []
@@ -32,6 +50,10 @@ export const Search = () => {
             ? "Search by ingredient..."
             : "Add another ingredient..."
         }
+        virtualScrollerOptions={{
+          itemSize: 38,
+          style: { maxHeight: "160px" },
+        }}
       />
       <s.Button>
         <span className="material-symbols-outlined">search</span>

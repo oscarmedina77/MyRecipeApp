@@ -18,6 +18,7 @@
   --blue-purple-8percent-opaque: rgba(140, 191, 252, 0.08);
   --bright-light-blue: #5cfaf6;
   --bright-green: #a5ff92;
+  --lightest-grey: rgb(234, 234, 234);
   --light-grey: rgb(228, 228, 228);
   --mid-grey: rgb(195, 195, 195);
   --dark-grey: rgb(125, 125, 125);
@@ -32,14 +33,35 @@ body {
 
 button {
   padding: 5px;
+  border-width: 1px;
   border-radius: 5px;
-  border-style: none;
+  border-style: solid;
+  border-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 button:hover {
-  background-color: var(--dark-grey);
+  background-color: var(--mid-grey);
 }
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 36;
   font-size: 30px;
+}
+
+.recipeCardWrapper:hover {
+  box-shadow: 4px 4px 4px var(--dark-grey);
+  animation: moveUp 0.5s ease-in-out;
+  transform: translate(-2px, -2px) rotateZ(0.001deg);
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0.001deg);
+    box-shadow: 2px 2px 2px var(--dark-grey);
+  }
+
+  100% {
+    transform: translate(-2px, -2px) rotateZ(0.001deg);
+    box-shadow: 4px 4px 4px var(--dark-grey);
+  }
 }

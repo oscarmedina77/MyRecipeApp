@@ -1,5 +1,6 @@
 import "./App.css";
 import { Header } from "./Header/Header";
+import { Recipes } from "./Recipes/Recipes";
 import { Search } from "./Search/Search";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Search />
+      <Recipes />
     </>
   );
 }
